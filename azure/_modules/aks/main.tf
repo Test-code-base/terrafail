@@ -39,6 +39,7 @@ resource "azurerm_kubernetes_cluster" "TerraFailAKS_cluster" {
   }
 }
 
+
 resource "azurerm_kubernetes_cluster_node_pool" "TerraFailAKS_node_pool" {
   name                  = "TerraFailAKS_node_pool"
   kubernetes_cluster_id = azurerm_kubernetes_cluster.TerraFailAKS_cluster.id
